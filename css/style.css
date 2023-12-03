@@ -1,0 +1,53 @@
+/* keyframes */
+
+@keyframes cube {
+	0% {
+		background-color: red;
+
+		transform: translate(0);
+	}
+
+	25% {
+		background-color: blue;
+
+		transform: translate(0, 200px);
+	}
+
+	50% {
+		background-color: green;
+
+		transform: translate(200px, 200px);
+	}
+
+	75% {
+		background-color: yellow;
+
+		transform: translate(200px, 0);
+	}
+
+	100% {
+		background-color: red;
+
+		transform: translate(0);
+	}
+}
+
+/* styles */
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	width: 350px;
+	height: 350px;
+
+	transform: translate(-50%, -50%);
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+
+	animation: cube 4000ms ease infinite both;
+}
